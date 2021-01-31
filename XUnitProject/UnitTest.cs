@@ -82,5 +82,23 @@ namespace XUnitProject
             //Assert
             Assert.Equal("Bertil Bertilsson is from the continent of South_America and isn't a system developer.", presentation);
         }
+
+        [Theory]
+        [InlineData("Cecilia", "Sivsdotter")]
+        [InlineData("", "")]
+        [InlineData("Bo", "Öman")]
+        public void LengthOfFirstNameAndLastNameTest(string firstName, string lastName)
+        {
+            // Arrange
+            int lengthOfFirstNameAndLastName = firstName.Length + lastName.Length;
+            Person p = new Person(firstName, lastName, false, Continent.Europe);
+            //                    first name, last name, is system deveoper, where from
+
+            // Act
+            int numCharacters = p.LengthOfFirstNameAndLastName;
+
+            //Assert
+            Assert.Equal(lengthOfFirstNameAndLastName, numCharacters);
+        }
     }
 }

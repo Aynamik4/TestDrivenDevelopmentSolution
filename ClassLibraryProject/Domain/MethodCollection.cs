@@ -31,7 +31,6 @@ namespace ClassLibraryProject.Domain
                     }
 
             return isPrimeNumber;
-
         }
     }
 }

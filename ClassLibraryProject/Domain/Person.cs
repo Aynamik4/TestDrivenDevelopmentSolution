@@ -10,6 +10,10 @@ namespace ClassLibraryProject.Domain
         public string LastName { get; }
         public bool IsSystemDeveloper { get; }
         public Continent WhereFrom { get; }
+        public int LengthOfFirstNameAndLastName
+        {
+            get => FirstName.Length + LastName.Length;
+        }
 
         public Person(string firstName, string lastName, bool systemDeveloper, Continent whereFrom)
         {
