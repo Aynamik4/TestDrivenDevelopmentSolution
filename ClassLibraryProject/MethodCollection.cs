@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ClassLibraryProject.Domain
+﻿namespace ClassLibraryProject
 {
     public static class MethodCollection
     {
