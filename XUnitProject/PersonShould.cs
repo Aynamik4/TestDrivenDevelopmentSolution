@@ -28,6 +28,7 @@ namespace ClassLibraryProject.Test
             Person p = new Person(firstName, lastName, true, Continent.Antarctica);
             //                    first name, last name, is system deveoper, where from
 
+            // Act
             string fullName = p.FullName;
 
             //Assert
@@ -40,6 +41,7 @@ namespace ClassLibraryProject.Test
             // Arrange
             Person person = new Person("Håkan", "Johansson", true, Continent.Europe);
 
+            // Act
             int health = person.Health;
 
             // Assert
